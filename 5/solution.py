@@ -78,7 +78,7 @@ def get_my_seat_id(
 
 
 occupied_seat_numbers = {
-    decode_seat_number(line) for line in open("input").read().split("\n")
+    decode_seat_number(line) for line in open("input").readlines()
 }
 occupied_seat_ids = {
     calculate_seat_id(row, column) for row, column in occupied_seat_numbers
